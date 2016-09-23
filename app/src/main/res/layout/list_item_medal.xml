@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:gravity="center"
+    android:padding="@dimen/padding_10dp"
+    android:layout_height="match_parent">
+    <TextView
+        android:paddingBottom="10dp"
+        android:id="@+id/tv_medalType"
+        android:layout_gravity="start"
+        android:visibility="invisible"
+        android:text="给力勋章"
+        android:textColor="#000000"
+        android:textSize="13sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <ImageView
+        android:id="@+id/iv_medal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/awesome_day"
+        />
+
+    <TextView
+        android:id="@+id/tv_medalName"
+        android:padding="5dp"
+        android:text="给力日勋章"
+        android:textColor="#000000"
+        android:textSize="11sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/tv_medalNum"
+        android:text="(1枚奖章)"
+        android:textColor="#000000"
+        android:textSize="13sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+</LinearLayout>

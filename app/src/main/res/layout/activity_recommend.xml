@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:orientation="vertical">
+    <RelativeLayout
+        android:id="@+id/recombg"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/main_title_height" 
+        android:background="@color/appcolor_blue" >
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="@string/setting_item2"
+            android:textColor="@color/white"
+            android:textSize="@dimen/action_title" /> 
+        <LinearLayout
+             android:id="@+id/iv_back"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:gravity="center" >
+
+            <ImageView
+                android:layout_width="@dimen/titlesize"
+                android:layout_height="@dimen/titlesize"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/icon_exit" /> 
+                </LinearLayout>
+   </RelativeLayout>
+    <LinearLayout
+        android:id="@+id/layout_body"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" 
+        android:orientation="vertical" >
+
+        <ListView
+            android:id="@+id/lv_recommed"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/padding_10dp"
+            android:background="@color/white" >
+        </ListView>
+      <LinearLayout
+        android:id="@+id/empty"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal"
+        android:background="@drawable/border" >
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="20dp"
+            android:text="@string/emptylist"
+            android:textSize="18sp"
+            android:textColor="#999999"
+             />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

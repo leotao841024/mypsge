@@ -1,0 +1,76 @@
+<?xml version='1.0' encoding='utf-8'?>
+<root>
+    <calorie>
+        <level id="level1">
+            <food id="1" name="草莓" unit="个" picnm="berries" />
+        </level>
+		<level id="level2">
+            <food id="2" name="西瓜" unit="块" picnm="watermelon" />
+            <food id="3" name="水果软糖" unit="个" picnm="candy" />
+        </level>
+		<level id="level3">
+            <food id="4" name="小笼包" unit="个" picnm="bun" />
+            <food id="5" name="橙子" unit="个" picnm="oranges" />
+            <food id="6" name="饺子" unit="个" picnm="dumplings" />
+        </level>
+        <level id="level4">
+            <food id="7" name="巧克力" unit="块" picnm="chocolate"/>
+            <food id="8" name="饼干" unit="个" picnm="cookies" />
+        </level>
+		<level id="level5">
+            <food id="9" name="香蕉" unit="个" picnm="banana" />
+            <food id="10" name="苹果" unit="个" picnm="apple" />
+            <food id="11" name="桃子" unit="个" picnm="peach" />
+        </level>
+		<level id="level6">
+            <food id="12" name="乳酸菌" unit="瓶" picnm="yakult" />
+        </level> 
+        <level id="level7">
+            <food id="13" name="牛奶" unit="杯" picnm="milk" />
+            <food id="14" name="馒头" unit="个" picnm="mantou" />
+            <food id="15" name="荷包蛋" unit="个" picnm="hebaodan" />
+            <food id="16" name="冰镇红茶" unit="杯" picnm="blacktea" /> 
+        </level>
+		  <level id="level8"> 
+            <food id="17" name="水果果冻" unit="个" picnm="jelly" />
+            <food id="18" name="雪碧" unit="罐" picnm="sodawater" /> 
+        </level>
+		<level id="level9">
+            <food id="19" name="玉米" unit="根" picnm="corn" />
+            <food id="20" name="鸡蛋/茶叶蛋" unit="个" picnm="egg" />
+            <food id="21" name="啤酒" unit="罐" picnm="beer" />
+            <food id="22" name="鸡腿" unit="个" picnm="drumstick" />
+        </level>
+		
+        <level id="level10">
+            <food id="23" name="面包" unit="片" picnm="bread" />
+            <food id="24" name="木瓜" unit="个" picnm="pawpaw" /> 
+        </level>
+		 <level id="level11"> 
+            <food id="25" name="椰子汁" unit="杯" picnm="yezhi" />
+            <food id="26" name="葡萄" unit="串" picnm="grape" />
+            <food id="27" name="哈密瓜" unit="牙" picnm="hamimellon" />
+        </level>
+        <level id="level12">
+            <food id="28" name="水果蛋糕" unit="块" picnm="cake" />
+            <food id="29" name="甜甜圈" unit="个" picnm="doughnut" />
+            <food id="30" name="冰淇淋" unit="个" picnm="icecream" />
+        </level>
+        <level id="level13">
+            <food id="31" name="汉堡" unit="个" picnm="hamburger" />
+            <food id="32" name="薯条" unit="份" picnm="chips" />
+            <food id="33" name="热狗" unit="个" picnm="hotdog" />
+        </level>
+        <level id="level14">
+            <food id="34" name="香肠" unit="根" picnm="sausage" />
+            <food id="35" name="方便面" unit="包" picnm="fangbianmian" />
+        </level>
+        <level id="level15">
+            <food id="36" name="月饼" unit="块" picnm="mooncake" />
+        </level>
+        <level id="level16">
+            <food id="37" name="麻花" unit="根"   picnm="mahua" />
+            <food id="38" name="牛肉面" unit="碗" picnm="niuroumian" />
+        </level>
+    </calorie>
+</root>

@@ -1,0 +1,149 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context="com.example.renrenstep.MainActivity" > 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="10"
+            android:orientation="vertical" > 
+            <FrameLayout
+                android:id="@+id/content_layout"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="9" >
+            </FrameLayout> 
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/list_line" >
+            </LinearLayout> 
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical" >
+
+                    <RadioButton
+                        android:id="@+id/main_tab_home"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:button="@null"
+                        android:checked="true"
+                        android:drawableTop="@drawable/bt_home_red"
+                        android:gravity="center"
+                        android:paddingBottom="3dp"
+                        android:paddingTop="3dp"
+                        android:text="@string/first_pg"
+                        android:textColor="@color/weather" />
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical" >
+
+                    <RadioButton
+                        android:id="@+id/main_tab_talk"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:button="@null"
+                        android:checked="false"
+                        android:drawableTop="@drawable/bt_talk_red"
+                        android:gravity="center"
+                        android:paddingBottom="3dp"
+                        android:paddingTop="3dp"
+                        android:text="@string/talktitle"
+                        android:textColor="@color/weather" />
+
+                    <TextView
+                        android:id="@+id/noreadnum"
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="3dp"
+                        android:background="@drawable/remind_icon"
+                        android:gravity="center"
+                        android:text="3"
+                        android:textColor="@color/white"
+                        android:textSize="10sp"
+                        android:visibility="gone" >
+                    </TextView>
+                </RelativeLayout>
+ 				<LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical" > 
+                    <RadioButton
+                        android:id="@+id/main_tab_game"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:button="@null"
+                        android:drawableTop="@drawable/bt_game_red"
+                        android:gravity="center"
+                        android:paddingBottom="3dp"
+                        android:paddingTop="3dp"
+                        android:text="@string/game_title"
+                        android:textColor="@color/weather" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical" > 
+                    <RadioButton
+                        android:id="@+id/main_tab_mine"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:button="@null"
+                        android:drawableTop="@drawable/bt_mine_red"
+                        android:gravity="center"
+                        android:paddingBottom="3dp"
+                        android:paddingTop="3dp"
+                        android:text="@string/mine_title"
+                        android:textColor="@color/weather" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/ll_point"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#99000000"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:visibility="gone" > 
+        <ImageView
+            android:id="@+id/iv_share_point"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/point_share"
+            android:visibility="invisible" />
+
+        <ImageView
+            android:id="@+id/iv_today_point"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/point_today"
+            android:visibility="invisible" />
+    </LinearLayout>
+
+</FrameLayout>

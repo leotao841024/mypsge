@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='utf-8'?>
+<root>
+    <versions>
+        <version level="1">
+            <sqlstr desc="create table  IF NOT EXISTS apm_steps(year integer,month integer,day integer,hour integer,minute integer,steps integer,mtoken varchar(30),timer number(15,0));" />
+            <sqlstr desc="create table IF NOT EXISTS apm_sys_logs(mid varchar(30),timer number(15,0),version varchar(30),dev_typ varchar(50),dev_version varchar(50),link_web_way varchar(30),desc varchar(3000),logtyp varchar(30));" />
+        </version>
+        <version level="2">
+            <sqlstr desc="create table IF NOT EXISTS apm_sys_friend(mid integer,nc varchar(30),email varchar(30),address varchar(50),acvtor varchar(50),state varchar(30),words varchar(100),remark varchar(100),idcd varchar(30),typ varchar(30));" />
+        </version>
+        <version level="3">
+            <sqlstr desc="create table IF NOT EXISTS sys_log(id INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL,key varchar(30),value text,timer number(15,0),typ integer);" />
+        </version>
+    </versions>
+</root>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_corner"
+        android:layout_margin="@dimen/padding_10dp"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/linear_man"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center"
+             >
+
+            <TextView
+                android:id="@+id/tv_man"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/padding_10dp"
+                android:clickable="false"
+                android:textSize="@dimen/stepdata"
+                android:text="@string/man" />
+        </LinearLayout>
+        
+        <LinearLayout 
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/add_friend_color">
+        </LinearLayout>
+        
+        <LinearLayout
+            android:id="@+id/linear_woman"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center"
+            >
+
+            <TextView
+                android:id="@+id/tv_woman"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/padding_10dp"
+                android:textSize="@dimen/stepdata"
+                android:clickable="false"
+                android:text="@string/woman" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linear_exit"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="@dimen/padding_10dp"
+        android:layout_marginRight="@dimen/padding_10dp"
+        android:layout_marginBottom="@dimen/padding_10dp"
+        android:background="@drawable/bg_corner"
+        android:gravity="center" >
+
+        <TextView
+            android:id="@+id/tv_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/padding_10dp"
+            android:textSize="@dimen/stepdata"
+            android:clickable="false"
+            android:text="@string/cancel" />
+    </LinearLayout>
+
+</LinearLayout>

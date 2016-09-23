@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/slidingView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/layout_actionbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/main_title_height"
+        android:background="@color/app_background" >
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="@string/setting"
+            android:textColor="@color/white"
+            android:textSize="@dimen/action_title" />
+
+        <LinearLayout
+            android:id="@+id/ll_back"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:gravity="center" >
+            <ImageView
+                android:layout_width="@dimen/titlesize"
+                android:layout_height="@dimen/titlesize"
+                android:src="@drawable/icon_exit" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_body"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" 
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/list_line" >
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/white"
+            android:gravity="center_vertical" >
+
+            <ImageView
+                android:id="@+id/image1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/stepdata"
+                android:layout_marginRight="@dimen/padding_10dp"
+                android:src="@drawable/setting_step_red" />
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/setting_item1"
+                android:textColor="@color/weather"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:id="@+id/iv_toggle"
+                android:layout_width="52dp"
+                android:layout_height="25dp"
+                android:layout_marginRight="@dimen/padding_10dp"
+                android:src="@drawable/toggle_normal" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/list_line" >
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/set_recommed"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/white"
+            android:gravity="center_vertical" >
+
+            <ImageView
+                android:id="@+id/image2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/stepdata"
+                android:layout_marginRight="@dimen/padding_10dp"
+                android:src="@drawable/setting_recommend_red" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/setting_item2"
+                android:textColor="@color/weather"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:layout_width="@dimen/titlesize"
+                android:layout_height="@dimen/titlesize"
+                android:layout_marginRight="@dimen/stepdata"
+                android:src="@drawable/icon_mine_next" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/list_line" >
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linear_about"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/white"
+            android:gravity="center_vertical" >
+
+            <ImageView
+                android:id="@+id/image3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/stepdata"
+                android:layout_marginRight="@dimen/padding_10dp"
+                android:src="@drawable/setting_about_red" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/setting_item3"
+                android:textColor="@color/weather"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:layout_width="@dimen/titlesize"
+                android:layout_height="@dimen/titlesize"
+                android:layout_marginRight="@dimen/stepdata"
+                android:src="@drawable/icon_mine_next" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/list_line" >
+        </LinearLayout>
+ 		<LinearLayout
+            android:id="@+id/layout_dev_updata"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/white"
+            android:gravity="center_vertical" >
+
+            <ImageView
+                android:id="@+id/image5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/stepdata"
+                android:layout_marginRight="@dimen/padding_10dp"
+                android:src="@drawable/bind_ioc" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/binddev"
+                android:textColor="@color/weather"
+                android:layout_weight="1"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tv_show_bind_msg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/padding_10dp" 
+                android:textColor="@color/weather"
+                android:layout_marginRight="5dp"
+                android:textSize="15sp" />
+            
+             <ImageView android:layout_height="@dimen/titlesize"
+                 		 android:layout_width="@dimen/titlesize"
+                 		 android:src="@drawable/icon_mine_next" 
+                 		 android:layout_gravity="center" 
+                 		 android:layout_marginRight="@dimen/stepdata">
+             </ImageView>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/list_line" >
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/layout_updata"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/white"
+            android:gravity="center_vertical" >
+
+            <ImageView
+                android:id="@+id/image4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/stepdata"
+                android:layout_marginRight="@dimen/padding_10dp"
+                android:src="@drawable/setting_update_red" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/setting_item4"
+                android:textColor="@color/weather"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tv_updata"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/padding_10dp"
+                android:text="new" 
+                android:textColor="@color/weather" 
+                android:textSize="15sp" /> 
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/list_line" >
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" >
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/bt_exit"
+            android:layout_width="230dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="60dp"
+            android:background="@drawable/bt_exit"
+            android:text="@string/exit_login"
+            android:textColor="@color/weather" />
+    </LinearLayout>
+
+</LinearLayout>

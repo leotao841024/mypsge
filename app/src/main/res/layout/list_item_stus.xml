@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:gravity="center_vertical"
+    android:layout_height="match_parent"
+    android:padding="@dimen/padding_10dp"
+    >
+    <view.CircleImageView
+        android:id="@+id/iv_avatar"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:src="@drawable/regist_man"
+        />
+
+    <TextView
+        android:id="@+id/tv_nickname"
+        android:layout_marginLeft="@dimen/padding_10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/about_size"
+        android:text="content"
+        android:textColor="#000000"
+        />
+
+</LinearLayout>

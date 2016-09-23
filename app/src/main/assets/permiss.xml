@@ -1,0 +1,24 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<root>
+    <permission>
+        <level id="must">
+            <permin name="android.permission.WAKE_LOCK" desc1="不锁屏" />
+			<permin name="android.permission.ACCESS_NETWORK_STATE" desc1="允许程序获取网络信息状态" />
+			<permin name="android.permission.ACCESS_WIFI_STATE" desc1="允许程序获取当前WiFi接入的状态以及WLAN热点的信息" />
+			<permin name="android.permission.WRITE_EXTERNAL_STORAGE" desc1="读写SD卡" />
+			<permin name="android.permission.INTERNET" desc1="允许程序访问网络" />
+        </level>
+		<level id="middlemust">
+			<permin name="android.permission.WAKE_LOCK" desc1="不锁屏" />
+			<permin name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" desc1="文件读写" />
+		</level>
+		<level id="notmust">
+            <permin name="android.permission.READ_PHONE_STATE" desc1="允许程序访问电话状态" />
+            <permin name="android.permission.RECEIVE_BOOT_COMPLETED   " desc1="开机自动启动" />
+            <permin name="android.permission.READ_LOGS" desc1="允许程序读取系统底层日志" />
+            <permin name="android.permission.ACCESS_FINE_LOCATION" desc1="允许程序通过GPS芯片接收卫星的定位信息" />
+            <permin name="android.permission.ACCESS_COARSE_LOCATION" desc1="允许程序通过WiFi或移动基站的方式获取用户错略的经纬度信息" />
+            <permin name="android.permission.WRITE_SETTINGS" desc1="允许程序读取或写入系统设置" />  
+        </level>
+    </permission>
+</root>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:emojicon="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/use_system_default"
+        android:checked="false" />
+
+   <!-- <com.rockerhieu.emojicon.EmojiconTextView
+        android:id="@+id/txtEmojicon"
+        android:text="@string/i_love_emojicon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <com.rockerhieu.emojicon.EmojiconEditText
+        android:id="@+id/editEmojicon"
+        android:hint="@string/hint"
+        android:text="@string/i_love_emojicon"
+        emojicon:emojiconSize="28sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />-->
+
+    <FrameLayout
+        android:id="@+id/emojicons"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent" />
+</LinearLayout>

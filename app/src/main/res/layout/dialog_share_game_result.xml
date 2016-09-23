@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:paddingBottom="10dp"
+    android:layout_gravity="center"
+    android:background="@drawable/bg_corner"
+    android:gravity="center_horizontal"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:background="@drawable/share_dialog_head"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4"
+        />
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:layout_weight="6"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp">
+    <view.CircleImageView
+        android:id="@+id/user_avatar"
+        android:src="@drawable/regist_man"
+        android:layout_width="90dp"
+        android:layout_height="90dp" />
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:padding="5dp"
+        android:textSize="16sp"
+        android:text=""
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+      android:layout_margin="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/tv_todaySteps"
+            android:textSize="16sp"
+            android:textColor="#000000"
+            android:text="1111"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_margin="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/tv_rank"
+            android:textSize="16sp"
+            android:textColor="#000000"
+            android:text=""
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+        <ImageView
+            android:id="@+id/iv_qrcode"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/erweima"
+            android:visibility="gone"
+            />
+
+    <LinearLayout
+        android:id="@+id/ll_share_icons"
+        android:layout_margin="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/iv_weixin_share"
+            android:layout_margin="5dp"
+            android:padding="5dp"
+            android:src="@drawable/share_weixin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:id="@+id/iv_weibo_share"
+            android:layout_margin="5dp"
+            android:padding="5dp"
+          android:src="@drawable/share_weibo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:id="@+id/iv_wechat_circle"
+            android:layout_margin="5dp"
+            android:padding="5dp"
+            android:src="@drawable/wxcircle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

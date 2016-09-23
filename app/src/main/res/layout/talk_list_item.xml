@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:emojicon="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:baselineAligned="false"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"> 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp" > 
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginRight="15dp"
+            android:orientation="horizontal" >
+
+            <view.CircleImageView
+                android:id="@+id/iv_icon"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/regist_man"  
+              /> 
+            <TextView
+                android:id="@+id/noreadnum"
+                android:layout_height="15dp"
+                android:layout_width="15dp"
+                android:layout_marginLeft="-12dp"
+                android:text="3"
+                android:textColor="@color/white"
+                android:gravity="center" 
+                android:textSize="12sp"
+                android:background="@drawable/remind_icon" >
+            </TextView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="8"
+            android:orientation="vertical"> 
+            <TextView
+                android:id="@+id/nm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="张三"
+                android:textColor="@color/talk_nm_color" >
+            </TextView> 
+            <view.EmojiconTextView
+                android:id="@+id/resume"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="content"
+                android:textColor="@color/weather"
+                android:gravity="left|center"
+                android:textSize="14sp"
+                emojicon:emojiconSize="18sp"
+                 />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/laytimer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/timer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="11:18"
+                android:textColor="@color/weather"
+                android:layout_gravity="right"
+                android:layout_marginRight="5dp" >
+            </TextView>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

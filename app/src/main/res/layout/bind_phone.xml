@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_background"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/layout_actionbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/main_title_height"
+        android:background="@color/appcolor_red" >
+
+        <TextView
+            android:id="@+id/tv_emailtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="@string/bing_phone"
+            android:textColor="@color/white"
+            android:textSize="@dimen/action_title" />
+
+        <LinearLayout
+            android:id="@+id/ll_phone_exit"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:gravity="center" >
+
+            <ImageView
+                android:layout_width="@dimen/titlesize"
+                android:layout_height="@dimen/titlesize"
+                android:src="@drawable/icon_exit" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" 
+        android:orientation="vertical"
+        android:paddingTop="@dimen/padding_10dp" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/list_line" >
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/RelativeLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@color/white"
+            android:gravity="center_vertical" >
+
+            <EditText
+                android:id="@+id/et_sendcode"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="30dp"
+                android:background="@color/white"
+                android:ems="10"
+                android:hint="@string/enter_phone" 
+                android:textCursorDrawable="@null" 
+ 				android:digits="@string/et_limit">  
+                <requestFocus />
+            </EditText>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/list_line" >
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginTop="@dimen/padding_10dp" >
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/list_line" >
+                </LinearLayout>
+
+                <EditText
+                    android:id="@+id/et_entercode"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="15dp"
+                    android:background="@color/white"
+                    android:ems="10"
+                    android:hint="@string/enter_code"
+                    android:textCursorDrawable="@null"
+                    android:singleLine="true"
+					android:maxLength="6" 
+					android:numeric="integer"
+					> 
+                    <requestFocus />
+                </EditText>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/list_line" >
+                </LinearLayout>
+            </LinearLayout> 
+            <Button
+                android:id="@+id/bt_send"
+                android:layout_width="120dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:textColor="@color/white"
+                android:textSize="@dimen/info_size"
+                android:text="@string/send_code"
+                android:background="@drawable/btn_corner" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" >
+        </LinearLayout> 
+        <Button
+            android:id="@+id/bt_conf"
+            android:layout_width="230dp"
+            android:layout_height="55dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="60dp"
+            android:textColor="@color/white"
+            android:text="@string/confirm"
+            android:background="@drawable/btn_corner"  />
+    </LinearLayout>
+
+</LinearLayout>

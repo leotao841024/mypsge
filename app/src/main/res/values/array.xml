@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <string-array name="troubles">
+        
+        <item >冠心病</item>
+        <item >糖尿病</item>
+        <item >肥胖症</item>
+        <item >消瘦症</item>
+        <item >无</item>
+    </string-array>
+    
+</resources>

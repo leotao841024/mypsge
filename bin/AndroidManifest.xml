@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.renrenstep"
+    android:versionCode="8"
+    android:versionName="2.0.1" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="21" />
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+  	<uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />  
+    <application
+        android:name="app.MyApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:persistent="true"
+        android:theme="@style/AppTheme"
+        android:hardwareAccelerated="true">
+        <activity
+            android:name=".MainActivity"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+        <activity android:name=".StepDataActivity" >
+        </activity>
+        <activity android:name=".StepSettingActivity" >
+        </activity>
+        <activity
+            android:name=".AppActivity"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+        <activity android:name=".RegisterActivity" >
+        </activity>
+        <activity android:name=".LoginActivity" >
+        </activity>
+        <activity
+            android:name=".InfoActivity"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+        <activity android:name=".TuiJianActivity" >
+        </activity>
+        <activity android:name=".ResetSecritActivity" >
+        </activity>
+        <activity android:name=".NewSecretActivity" >
+        </activity>
+
+        <service android:name="service.StepService" >
+        </service>
+        <service android:name="service.UploadDataService" >
+        </service>
+        <service android:name="service.NewStepService" >
+        </service>
+        <service android:name="service.SimpleStepService" >
+        </service>
+        <service android:name="service.TalkingMessageService" >
+        </service>
+        <service
+            android:name="com.baidu.location.f"
+            android:enabled="true"
+            android:process=":remote" >
+        </service>
+
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="55b7401167e58e7920001b0b" />
+
+        <activity android:name=".PhotoActivity" >
+        </activity>
+        <activity android:name=".SelectPhotoActivity" >
+        </activity>
+
+        <receiver android:name="receiver.NotifyReceiver" >
+        </receiver>
+
+        <activity android:name=".Demo" >
+          
+        </activity>
+        <activity android:name=".AboutActivity" >
+        </activity>
+        <activity
+            android:name=".AnimActivity"
+            android:theme="@style/Theme.Start">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".HintActivity">
+        </activity>
+        <activity android:name=".ReportActivity" >
+        </activity>
+        <activity android:name=".LeaderActivity" >
+        </activity>
+
+        <receiver android:name="receiver.BootBroadcastReceiver" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="receiver.MessageBroadcastReciver" >
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+        </receiver>
+
+        <service android:name="service.MyService" >
+            <intent-filter android:priority="1000" >
+            </intent-filter>
+        </service>
+
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="55b7401167e58e7920001b0b" />
+        
+        <activity
+            android:name="com.umeng.socialize.view.ShareActivity"
+            android:configChanges="orientation|keyboard"
+            android:launchMode="singleTask"
+            android:noHistory="true"
+            android:theme="@style/Theme.UMDialog"
+            android:windowSoftInputMode="stateVisible|adjustResize" />
+        <activity
+            android:name=".wxapi.WXEntryActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity
+            android:name="com.tencent.tauth.AuthActivity"
+            android:launchMode="singleTask"
+            android:noHistory="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="tencent你的QQ互联APPID" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.tencent.connect.common.AssistActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+        </activity>
+        <activity
+            android:name=".SettingActivity"
+            android:label="@string/title_activity_setting" >
+        </activity>
+        <activity
+            android:name=".MailListActivity"
+            android:label="@string/title_activity_mail_list"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+        <activity
+            android:name=".TalkSearchManActivity"
+            android:label="@string/title_activity_talk_search_man"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+        <activity
+            android:name=".TalkingActivity"
+            android:label="@string/title_activity_talking"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+        <activity
+            android:name=".AddFriendActivity"
+            android:label="@string/title_activity_add_friend"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+        <activity
+            android:name=".NewFriendActivity"
+            android:label="@string/title_activity_new_friend"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+
+        <meta-data
+            android:name="LIFECYCLE:com.alibaba.doraemon.impl.lifecycle.LifecycleMonitorFetcher"
+            android:value="" />
+        <meta-data
+            android:name="CRASHMONITOR:com.alibaba.doraemon.impl.crash.CrashMonitorFetcher"
+            android:value="" />
+        <meta-data
+            android:name="AUDIOCACHE:com.alibaba.doraemon.impl.cache.CacheFetcher"
+            android:value="" />
+        <meta-data
+            android:name="IMAGECACHE:com.alibaba.doraemon.impl.cache.CacheFetcher"
+            android:value="" />
+        <meta-data
+            android:name="IMAGE:com.alibaba.doraemon.impl.image.ImageMagicianFetcher"
+            android:value="IMAGECACHE;REQUEST;THREAD" />
+        <meta-data
+            android:name="AUDIO:com.alibaba.doraemon.impl.audio.AudioMagicianFetcher"
+            android:value="AUDIOCACHE;REQUEST;THREAD" />
+        <meta-data
+            android:name="TRACE:com.alibaba.doraemon.impl.trace.TraceFetcher"
+            android:value="THREAD" />
+        <meta-data
+            android:name="STATISTICS:com.alibaba.doraemon.impl.statistics.StatisticsFetcher"
+            android:value="THREAD;LIFECYCLE;EVENTBUTLER" />
+        <meta-data
+            android:name="MONITOR:com.alibaba.doraemon.impl.monitor.MonitorFetcher"
+            android:value="" />
+        <!-- <uses-library android:name="LIFECYCLE:com.alibaba.doraemon.impl.lifecycle.LifecycleMonitorFetcher" android:required="false"/> -->
+        <meta-data
+            android:name="LIFECYCLE:com.alibaba.doraemon.impl.lifecycle.LifecycleMonitorFetcher"
+            android:value="" />
+        <meta-data
+            android:name="CRASHMONITOR:com.alibaba.doraemon.impl.crash.CrashMonitorFetcher"
+            android:value="" />
+        <meta-data
+            android:name="CACHE:com.alibaba.doraemon.impl.cache.CacheFetcher"
+            android:value="" />
+        <meta-data
+            android:name="REQDEFCACHE:com.alibaba.doraemon.impl.cache.CacheFetcher"
+            android:value="" />
+        <meta-data
+            android:name="REQTTMPCACHE:com.alibaba.doraemon.impl.cache.CacheFetcher"
+            android:value="" />
+        <meta-data
+            android:name="THREAD:com.alibaba.doraemon.impl.threadpool.ThreadFetcher"
+            android:value="LIFECYCLE" />
+        <meta-data
+            android:name="REQUEST:com.alibaba.doraemon.impl.request.VollyRequestFetcher"
+            android:value="CACHE" />
+        <meta-data
+            android:name="NAVIGATOR:com.alibaba.doraemon.impl.navigator.NavigatorFetcher"
+            android:value="" />
+        <meta-data
+            android:name="EVENTBUTLER:com.alibaba.doraemon.impl.eventbus.EventButlerFetcher"
+            android:value="LIFECYCLE" />
+        <meta-data
+            android:name="lwp.extension"
+            android:value="com.alibaba.wukong.auth.AuthExtension" />
+        <!-- 每个App需要配置各自的AppKey -->
+        <meta-data
+            android:name="wk.appKey"
+            android:value="0c9393403c5ece9c38bb5fe273984ea4" />
+
+        <service android:name="com.laiwang.protocol.android.LWPService" />
+
+        <activity
+            android:name=".NewFriendApplyActivity"
+            android:label="@string/title_activity_new_friend_apply" >
+        </activity>
+        <activity
+            android:name=".GrouMemChoseActivity"
+            android:label="@string/title_activity_grou_mem_chose" >
+        </activity>
+        <activity
+            android:name=".LogInfoActivity"
+            android:label="@string/title_activity_log_info" >
+        </activity>
+        <activity
+            android:name=".WeekGameActivity">
+        </activity>
+    </application>
+
+</manifest>

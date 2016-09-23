@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/layout_actionbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/main_title_height"
+        android:background="@color/secret_title"
+         >
+		
+		<LinearLayout
+            android:id="@+id/ll_secret_exit"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:gravity="center" >
+
+            <ImageView
+                android:layout_width="@dimen/titlesize"
+                android:layout_height="@dimen/titlesize"
+                android:src="@drawable/icon_exit" />
+        </LinearLayout>
+        <TextView
+            android:id="@+id/tv_data"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="@string/reset_secrit"
+            android:textColor="@color/title_text"
+            android:textSize="@dimen/action_title" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/RelativeLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" 
+        android:orientation="vertical"
+        android:paddingLeft="40dp"
+        android:paddingRight="40dp" >
+
+        <Button
+            android:id="@+id/bt_next"
+            android:layout_width="230dp"
+            android:layout_height="55dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="60dp"
+            android:text="@string/next"
+            android:background="@drawable/bg_bt_red"
+            android:textColor="@color/white" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="150dp"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/layout_info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center" >
+
+                <EditText
+                    android:id="@+id/et_userid"
+                    android:layout_width="240dp"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:singleLine="true"
+                    android:paddingLeft="10dp"
+                    android:background="@drawable/edittext_bg_red"
+                    android:textColor="@color/appcolor_red"
+                    android:hint="@string/userid" 
+                    android:digits="@string/et_limit"
+                    android:textCursorDrawable="@null" 
+                    >
+
+                    <requestFocus />
+                </EditText>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="240dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp"
+                android:gravity="center" >
+
+                <EditText
+                    android:id="@+id/et_code"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:paddingLeft="10dp"
+                    android:background="@drawable/edittext_bg_red"
+                    android:textColor="@color/appcolor_red"
+                    android:singleLine="true"
+                    android:hint="@string/code"
+                    android:textCursorDrawable="@null" 
+                    android:maxLength="6"
+                    android:numeric="integer" 
+                /> 
+                <Button
+                    android:id="@+id/bt_code"
+                    android:layout_width="120dp"
+                    android:layout_height="45dp"
+                    android:gravity="center"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:layout_marginLeft="@dimen/padding_10dp"
+                    android:text="@string/get_code"
+                    android:textSize="15sp"
+                    android:background="@drawable/bg_bt_red"
+                    android:textColor="@color/white" 
+                     />
+            </LinearLayout>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

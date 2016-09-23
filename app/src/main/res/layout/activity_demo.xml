@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/woerweima"></ImageView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:shadowColor="#ff000000"
+            android:shadowDx="30"
+            android:shadowDy="30"
+            android:shadowRadius="1"
+            android:text="长按二维码。。。。。。。"></TextView>
+
+        <TextView
+            android:id="@+id/test_shadow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:shadowColor="#ff000000"
+            android:shadowDx="0"
+            android:shadowDy="1"
+            android:shadowRadius="1"
+            android:text="Test Shadow"
+            android:textColor="@color/appcolor_blue"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/test_shadow2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:shadowColor="#ff000000"
+            android:shadowDx="10"
+            android:shadowDy="10"
+            android:shadowRadius="1"
+            android:text="Test Shadow"
+            android:textColor="@color/appcolor_blue"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/test_shadow3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:shadowColor="#ff000000"
+            android:shadowDx="30"
+            android:shadowDy="30"
+            android:shadowRadius="1"
+            android:text="Test Shadow"
+            android:textColor="@color/appcolor_blue"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:orientation="vertical"
+        android:background="@color/appcolor_blue">
+
+    </LinearLayout>
+
+</LinearLayout>

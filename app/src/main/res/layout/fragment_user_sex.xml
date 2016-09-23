@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_sex"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="60dp"
+    android:paddingLeft="40dp"
+    android:paddingRight="40dp"
+    android:paddingTop="40dp" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/sex"
+            android:textSize="30sp" />
+
+        <ImageView
+            android:id="@+id/iv_man"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_marginTop="40dp"
+            android:layout_weight="1"
+            android:src="@drawable/sel_man" />
+
+        <ImageView
+            android:id="@+id/iv_woman"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_marginBottom="40dp"
+            android:layout_marginTop="40dp"
+            android:layout_weight="1"
+            android:src="@drawable/sel_women" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/bt_next"
+        android:layout_width="230dp"
+        android:layout_height="55dp"
+        android:background="@drawable/bg_bt_white"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/next"
+        android:textSize="@dimen/stepdata" />
+
+</LinearLayout>
